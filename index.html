@@ -3,40 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumor Stance Classification</title>
+    
+    <!-- logo -->
+    <link rel="icon" type="/images/logo" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:
+    opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=news/">
+    
+    <!-- FONT awesome ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- POPPINS font by google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,
+    wght@0,400..900;1,400..900&family=Poppins:ital,
+    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+    <!-- CONNECT CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Stance Insight Network</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Smart Utility System</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Discover our innovative smart utility solutions.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about our mission and values.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Explore the services we offer to enhance your utility management.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with our team for more information.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Smart Utility System. All rights reserved.</p>
-    </footer>
+    <!--========== HERO SECTION =============-->
+    <section class="hero_section">
+        <header>
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <a href="#">Get the News</a>
+                <div class="navbar_menu_container">
+                    <a href="#" class="link">Latest</a>
+                    <a href="#" class="link">India</a>
+                    <a href="#" class="link">Global</a>
+                    <a href="#" class="link">Opinion</a>
+                    <a href="#" class="link">Videos</a>
+                    <a href="#" class="link">Entertainment</a>
+                    <a href="#" class="user_icon">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero_section_container">
+            <video width="1690" height="500" controls></video> 
+            <video src="https://pin.it/p0i8GEbWc" type="video/mp4"
+            alt="web_vid" class="hero_section_vid"></video>            
+            <h1 class="hero_section_title">Connecting You to the Pulse of the World!</h1>
+            <div class="hero_section_input_container">
+                <input type="text" placeholder="Detect Rumour in......"
+                class="input_container_news"/>
+            </div>
+        </div>
+    </section>
+
+    <!--================= NEWS SECTION ================= -->
+    <section class="our_news">
+        <div class="our_offer">
+            <div class="offer_img">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.altnews.in%2F&psig=AOvVaw0dBzIqInLy1j7ZWU2mE3eJ&ust=1739273091030000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCygLT_uIsDFQAAAAAdAAAAABAE">
+                <h2>Live News</h2>
+            </div>
+        </div>
+
+        <div class="our_offer">
+            <div class="offer_img">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.employmentnews.gov.in%2Fnewemp%2FHome.aspx&psig=AOvVaw1xTdNsZMY5fGxOlpQvcmIx&ust=1739273256602000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjn9PT_uIsDFQAAAAAdAAAAABAE">
+                <h2>Recent News</h2>
+            </div>
+        </div>
+
+        <div class="our_offer">
+            <div class="offer_img">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdigital.library.unt.edu%2Fark%3A%2F67531%2Fmetadc916515%2F&psig=AOvVaw0rp8u_4TKs2Wr0yGFf3iYd&ust=1739273377953000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiooa-AuYsDFQAAAAAdAAAAABAE">
+                <h2>Yesterday's News</h2>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
