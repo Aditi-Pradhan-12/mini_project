@@ -34,17 +34,6 @@
 }
 
 .user_icon{
-    height: 30x;
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-
-.user_icon{
     height: 30px;
     width: 30px;
     border: 1px solid white;
@@ -53,18 +42,6 @@
     align-items: center;
     justify-content: center;
     display: none;
-}
-
-@media only screen and (max-width: 700px){
-    .user_icon{
-        display: flex;
-    }
-    .link{
-        display: none;
-    }
-    .hero_section{
-        min-height: 100%;
-    }
 }
 
 .hero_section_container{
@@ -77,6 +54,15 @@
     height: calc(60vh-60px);
 }
 
+.hero_section_title{
+    position: absolute;
+    align-items: center;
+    top: 40%;
+    z-index: 1;
+    color: white;
+    font-size: 70px;
+}
+
 .hero_section_input_container{
     position: absolute;
     top: 52%;
@@ -84,21 +70,12 @@
 
 .hero_section_vid{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
+    top: 11%;
+    width: 100%;
     height: auto;
     z-index: -1;
 }
 
-.hero_section_title{
-    position: absolute;
-    align-items: center;
-    top: 40%;
-    z-index: 1;
-    color: white;
-    font-size: 80px;
-}
 .hero_section_input_container, .input ,.input_container_news{
     padding: 10px;
     justify-content: center;
@@ -121,27 +98,17 @@
         display: none;
     }
     .hero_section{
-        min-height: 100%;
-    }
-    .hero_section_input_container{
-        flex-direction: column;
-        background-color: transparent;
-        width: 90%;
-    }
-    .hero_section_vid{
-        height: 100%;
+        min-height: 300px;
     }
     .hero_section_title{
+        height: 10%;
         font-size: 30px;
-        width: 95%;
-        text-align: center;
-        top: 20%;
+        font-weight: 100;
+        text-overflow: none;
     }
-    .hero_section_input_container, .input ,.input_container_news{
-        top: 30%;
-        height: 10px;
-        font-size: 15px;
-        width: 400px;
+    .hero_section_vid{
+        height: 450px;
+        width: 800px;
     }
 }
 
