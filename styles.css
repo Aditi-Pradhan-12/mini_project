@@ -64,6 +64,13 @@
     text-align: center;
 }
 
+.fa-magnifying-glass{
+    align-self: auto;
+    padding: 10px 20px;
+    size: 0.5rem;
+    cursor: pointer;
+}
+
 .hero_section_input_container{
     width: 60%;
 }
