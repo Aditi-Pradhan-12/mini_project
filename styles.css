@@ -7,9 +7,7 @@
 
 /************HERO SECTION************/
 .hero_section{
-   background-color: rgb(110,107,107);
-   background-image: radial-gradient(circle, rgba(110,107,107,1) 0%, rgba(0,0,0,1) 100%);
-   background-blend-mode: overlay;
+   background-color: lightgray;
    padding-bottom: 20px;
    height: 430px;
 }
@@ -21,11 +19,11 @@
     align-items: center;
     height: 60px;
     padding: 16px 45px;
-    background-color: black;
+    background-color: lightgray;
 }
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
 }
 .navbar_menu_container{
@@ -57,18 +55,20 @@
     text-align: center;
 }
 
-.hero_section_title{
-    margin-top: 1rem;
-    color: white;
-    font-size: 40px;
-    text-align: center;
+.hero_section_container img{
+    height: 300px;
+    width: 55rem;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
 }
 
-.fa-magnifying-glass{
-    align-self: auto;
-    padding: 10px 20px;
-    size: 0.5rem;
-    cursor: pointer;
+.hero_section_title{
+    position: absolute;
+    margin-bottom: 5%;
+    color: black;
+    font-size: 30px;
+    text-align: center;
 }
 
 .hero_section_input_container{
@@ -76,10 +76,9 @@
 }
 
 .hero_section_input_container, .input ,.input_container_news{
+    position: absolute;
     padding: 10px;
     justify-content: center;
-    border: none;
-    outline: none;
     text-align: left;
     font-size: 18px;
     height: 29px;
@@ -87,6 +86,7 @@
     border-radius: 10px;
     display: flex;
     width: 65%;
+    margin-top: 2%;
 }
 
 @media only screen and (max-width: 700px){
@@ -100,53 +100,12 @@
         min-height: 300px;
     }
     .hero_section_title{
-        height: 10%;
+        height: 18%;
         font-size: 30px;
-        font-weight: 100;
+        font-weight: 200;
         text-overflow: none;
     }
-}
-
-/********NEWS SECTION ************/
-.our_news_section{
-    background-color: black;
-    margin: 0rem auto;
-    width: 100%;
-}
-
-.our_news_section{
-    display: flex;
-    flex-wrap: wrap;  
-    gap: 5rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.offer_img img{
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid white;
-    transition: all 0.3s ease;
-}
-
-.offer_img:hover{
-    transform: scale(1.05);
-}
-
-.our_offer img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.our_offer, .img{
-    height: 100rem;
-}
-
-.offer_img h2{
-    width: 100%;
-    font-size: 20px;
-    font-weight: 200;
-    color: white;
+    .hero_section_input_container{
+        width: 130%;
+    }
 }
