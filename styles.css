@@ -9,7 +9,8 @@
 .hero_section{
    background-color: lightgray;
    padding-bottom: 20px;
-   height: 430px;
+   height: 670px;
+   width: 100%;
 }
 
 /************ NAVBAR ************/
@@ -17,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
     padding: 16px 45px;
     background-color: lightgray;
 }
@@ -56,37 +57,47 @@
 }
 
 .hero_section_container img{
-    height: 300px;
-    width: 55rem;
+    height: 590px;
+    width: 106rem;
     display: flex;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 10rem;
+    opacity: 0.7;
+    background: url(/bg_image.png) lightgray 50% / cover no-repeat;
+    backdrop-filter: blur(2px);
 }
 
 .hero_section_title{
     position: absolute;
     margin-bottom: 5%;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
 .hero_section_input_container{
-    width: 60%;
+    position: absolute;
+    margin-top: 3%;
 }
 
-.hero_section_input_container, .input ,.input_container_news{
-    position: absolute;
-    padding: 10px;
-    justify-content: center;
-    text-align: left;
-    font-size: 18px;
-    height: 29px;
-    text-overflow: none;
-    border-radius: 10px;
+.input_container_news{
     display: flex;
-    width: 65%;
-    margin-top: 2%;
+    padding: 20px;
+    text-align: left;
+    font-family: Kreon;
+    font-size: 18px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    border-radius: 18px;
+    width: 39rem;
+}
+
+.input_container_news::placeholder{
+    color: white;
 }
 
 @media only screen and (max-width: 700px){
@@ -102,10 +113,62 @@
     .hero_section_title{
         height: 18%;
         font-size: 30px;
-        font-weight: 200;
-        text-overflow: none;
+        font-weight: 400;
+        display: flex;
+        margin-top: -2.8rem;
+    }
+    .hero_section_container{
+        width: 90%;
     }
     .hero_section_input_container{
-        width: 130%;
+        width: 80%;
+    }
+    .hero_section_container img{
+        display: flex;
+        
+    }
+}
+
+/*================= NEWS SECTION ================= */
+.our_news{
+    margin: 0;
+    padding: 0;
+    margin-left: 4rem;
+    text-align: center;
+    height: 400px;
+    margin-top: 3rem;
+}
+
+.our_news h1{
+    font-size: 40px;
+}
+
+.semicontainer{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.left p{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 100px;
+    font-size: 19px;
+}
+
+.right img{
+    margin-top: 3rem;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 700px){
+    .left p{
+        flex: 1;
+    }
+    .semicontainer{
+        width: 80%;
     }
 }
