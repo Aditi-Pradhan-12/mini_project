@@ -1,1 +1,1 @@
-# mini_project
+# RUMOR DETECTION USING LSTM MODEL
