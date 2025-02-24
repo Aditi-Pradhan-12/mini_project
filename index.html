@@ -31,7 +31,7 @@
         <header>
             <!-- NAVBAR -->
             <nav class="navbar">
-                <a href="#">Get the News</a>
+                <a href="#">Rumor Detection</a>
                 <div class="navbar_menu_container">
                     <a href="#" class="link">Home</a>
                     <a href="#" class="link">About Us</a>
@@ -47,18 +47,14 @@
         </header>
 
         <div class="hero_section_container">
-            <img src="./bg_image.png">
-            <h1 class="hero_section_title">Connecting You to the Pulse of the World!</h1>
-            <div class="hero_section_input_container"> 
-                <input type="text" placeholder="Detect Rumour in......"
-                class="input_container_news"/>
-            </div>
+            <img src="./original.jpg">
         </div>
     </section>
 
     <!--================= NEWS SECTION ================= -->
     <section class="our_news">
-        <h1>Machine Learning Model</h1>
+        <h2>Machine Learning Model</h2>
+        <h1>Rumor Stance Classification</h1>
         <div class="semicontainer">
             <div class="left">
                 <p>
@@ -69,6 +65,10 @@
                     Since manually identifying fake news is challenging, there is a growing need for machine learning classifiers to detect it automatically. 
                     This systematic literature review explores the role of machine learning in identifying and combating fake news.
                 </p>
+                <br><br>
+                <button>
+                    Predict News
+                </button>
             </div>
 
             <div class="right">
@@ -77,10 +77,22 @@
         </div>
     </section>
 
-    <!--================= FOOTER ================= -->
-    <section class="footer_container">
-        <div class="footer_section">
-
+    <!--================= NEws detection PAGE ================= -->
+    <section class="detect_news">
+        <h1>Detect Rumour</h1>
+        <br>
+        <div class="false_or_true">
+            <p>
+                Our page states that increased internet and social media usage facilitates the spread of false information. 
+                The lack of posting restrictions allows individuals to easily spread rumors and misinformation, damaging reputations and affecting opinions. 
+                The page describes the importance of identifying fake news and highlights the use of machine learning classifiers for this purpose. 
+                The user is invited to enter news headlines for analysis. The page also states it will not share the user's email.
+            </p>
+        </div>
+        <br><br>
+        <div class="container">
+            <input type="text" placeholder="Add news headline......"
+            class="input_container_news"/>
         </div>
     </section>
     

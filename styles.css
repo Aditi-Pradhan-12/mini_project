@@ -7,9 +7,9 @@
 
 /************HERO SECTION************/
 .hero_section{
-   background-color: lightgray;
+   background-color: white;
    padding-bottom: 20px;
-   height: 670px;
+   height: 90vh;
    width: 100%;
 }
 
@@ -57,14 +57,12 @@
 }
 
 .hero_section_container img{
-    height: 590px;
-    width: 106rem;
+    height: 585.5px;
+    width: 90rem;
     display: flex;
     align-items: center;
     margin-top: 10rem;
-    opacity: 0.7;
-    background: url(/bg_image.png) lightgray 50% / cover no-repeat;
-    backdrop-filter: blur(2px);
+    background: url(/bg_image.png) white 50% / cover no-repeat;
 }
 
 .hero_section_title{
@@ -78,26 +76,6 @@
 .hero_section_input_container{
     position: absolute;
     margin-top: 3%;
-}
-
-.input_container_news{
-    display: flex;
-    padding: 20px;
-    text-align: left;
-    font-family: Kreon;
-    font-size: 18px;
-    height: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: rgba(0, 0, 0, 0.25);
-    color: white;
-    border-radius: 18px;
-    width: 39rem;
-}
-
-.input_container_news::placeholder{
-    color: white;
 }
 
 @media only screen and (max-width: 700px){
@@ -139,8 +117,13 @@
     margin-top: 3rem;
 }
 
+.our_news h2{
+    font-size: 28px;
+    font-weight: 100;
+}
+
 .our_news h1{
-    font-size: 40px;
+    font-size: 40px ;
 }
 
 .semicontainer{
@@ -158,6 +141,20 @@
     font-size: 19px;
 }
 
+.left button{
+    border: none;
+    background-color: green;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: antiquewhite;
+    border-radius: 14px;
+}
+
 .right img{
     margin-top: 3rem;
     max-width: 100%;
@@ -171,4 +168,49 @@
     .semicontainer{
         width: 80%;
     }
+}
+
+/*================= NEWS detection page ================= */
+.detect_news{
+    margin: 100%;
+    padding: 0;
+    margin-left: 4rem;
+    text-align: center;
+    height: 60px;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.detect_news h1{
+    font-size: 30px;
+}
+
+.false_or_true p{
+    font-size: 19px;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+.input_container_news{
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: rgba(0, 0, 0, 0.50);
+    color: white;
+    border-radius: 18px;
+    width: 93%;
+    align-items: center;
+}
+
+.input_container_news::placeholder{
+    color: white;
+    font-size: 19px;
 }
