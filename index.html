@@ -27,18 +27,18 @@
 </head>
 <body>
     <!--========== HERO SECTION =============-->
-    <section class="hero_section">
+    <section class="hero_section" id="Home">
         <header>
             <!-- NAVBAR -->
             <nav class="navbar">
-                <a href="#">Rumor Detection</a>
+                <a href="#" class="nav_text">Rumor Detection</a>
                 <div class="navbar_menu_container">
-                    <a href="#" class="link">Home</a>
-                    <a href="#" class="link">About Us</a>
-                    <a href="#" class="link">Prediction</a>
-                    <a href="#" class="link">Opinion</a>
-                    <a href="#" class="link">Contact Us</a>
-                    <a href="#" class="link">Login/sign up</a>
+                    <a href="#Home" target="_self" class="nav_link active-link">Home</a>
+                    <a href="#About Us" target="_blank" class="nav_link">About Us</a>
+                    <a href="#Prediction" target="_blank" class="nav_link">Prediction</a>
+                    <a href="#Opinion" target="_blank" class="nav_link">Opinion</a>
+                    <a href="#Contact Us" target="_blank" class="nav_link">Contact Us</a>
+                    <a href="#Login/sign up" target="_blank" class="nav_link">Login/sign up</a>
                     <a href="#" class="user_icon">
                         <i class="fa-solid fa-user"></i>
                     </a>
@@ -52,7 +52,7 @@
     </section>
 
     <!--================= NEWS SECTION ================= -->
-    <section class="our_news">
+    <section class="our_news" id="About Us">
         <h2>Machine Learning Model</h2>
         <h1>Rumor Stance Classification</h1>
         <div class="semicontainer">
@@ -78,9 +78,8 @@
     </section>
 
     <!--================= NEws detection PAGE ================= -->
-    <section class="detect_news">
-        <h1>Detect Rumour</h1>
-        <br>
+    <section class="detect_news" id="Prediction">
+        <h1>Detect Rumor</h1>
         <div class="false_or_true">
             <p>
                 Our page states that increased internet and social media usage facilitates the spread of false information. 
@@ -90,11 +89,11 @@
             </p>
         </div>
         <br><br>
+        <h4>Enter News Headline</h4>
         <div class="container">
             <input type="text" placeholder="Add news headline......"
             class="input_container_news"/>
         </div>
     </section>
-    
 </body>
 </html>
