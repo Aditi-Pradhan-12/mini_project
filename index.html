@@ -16,84 +16,347 @@
 
     <!-- POPPINS font by google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,
-    wght@0,400..900;1,400..900&family=Poppins:ital,
-    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
-    <!-- CONNECT CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/styles.css" />
+
     <title>Welcome to Stance Insight Network</title>
-</head>
-<body>
-    <!--========== HERO SECTION =============-->
-    <section class="hero_section" id="Home">
-        <header>
-            <!-- NAVBAR -->
-            <nav class="navbar">
-                <a href="#" class="nav_text">Rumor Detection</a>
-                <div class="navbar_menu_container">
-                    <a href="#Home" target="_self" class="nav_link active-link">Home</a>
-                    <a href="#About Us" target="_blank" class="nav_link">About Us</a>
-                    <a href="#Prediction" target="_blank" class="nav_link">Prediction</a>
-                    <a href="#Opinion" target="_blank" class="nav_link">Opinion</a>
-                    <a href="#Contact Us" target="_blank" class="nav_link">Contact Us</a>
-                    <a href="#Login/sign up" target="_blank" class="nav_link">Login/sign up</a>
-                    <a href="#" class="user_icon">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                </div>
-            </nav>
-        </header>
+  </head>
+  <body style="background-image: original/jpg;">
+    <header class="header" id="header">
 
-        <div class="hero_section_container">
-            <img src="./original.jpg">
+      <nav class="nav container">
+        <a href="#logo" class="nav__logo">Rumor Detection</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" target="_self" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#aboutus" target="_self" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#prediction" target="_self" class="nav__link">Prediction</a>
+            </li>
+            <li class="nav__item">
+              <a href="#opinion" target="_self" class="nav__link">Opinion</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contactus" target="_self" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#FAQs" target="_self" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#login/sign_up" target="_blank" class="nav__link">Login/Sign Up</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="/images/original.jpg" alt="" class="home__img" />
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="aboutus">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section_title about_title">
+              ABOUT US
+            </h2>
+            <br>
+            <p class="about__description">
+              The internet is one of the most significant inventions, connecting a vast number of users worldwide. 
+              People use it for various purposes, with social media platforms providing easy access to information sharing. 
+              However, these platforms do not verify users or their posts, allowing the spread of fake news. 
+              Such misinformation can be used as propaganda against individuals, societies, organizations, or political parties. 
+              Since manually identifying fake news is challenging, there is a growing need for machine learning classifiers to detect it automatically. 
+              This systematic literature review explores the role of machine learning in identifying and combating fake news.
+            </p>    
+          </div>
+
+          <div class="about__img">
+            <img src="/images/correcting_mistake.jpg" class="about__img-two" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PREDICTION ====================-->
+      <br><br><br>
+      <section class="prediction" id="prediction">
+        <div class="prediction__container container grid">
+          <div class="false_or_true">
+            <h2 class="prediction_title about_title">
+              Prediction
+            </h2>
+            <br>
+            <p class="prediction__description">
+              Our page states that increased internet and social media usage facilitates the spread of false information. 
+              The lack of posting restrictions allows individuals to easily spread rumors and misinformation, damaging reputations and affecting opinions. 
+              The page describes the importance of identifying fake news and highlights the use of machine learning classifiers for this purpose. 
+              The user is invited to enter news headlines for analysis. The page also states it will not share the user's email.
+            </p> 
+            <br>
+            <h4 class="heading">Enter News Headline</h4>
+            <br>
+          </div>
+        </div>
+        <div class="container_1">
+          <input type="text" placeholder="Add news headline......"
+          class="input_container_news"/>
+        </div>
+        <br>
+        <button class="button">
+          Predict News
+        </button>
+      </section>
+
+    <!--==================== OPINION ====================-->
+    <br><br><br>
+    <section class="opinion" id="opinion">
+      <div class="opinion__container container grid">
+        <div class="opinion_in">
+          <h2 class="opinion_title about_title">
+            Opinion
+          </h2>
+          <br>
+          <p class="opinion__description">
+            Our page states that increased internet and social media usage facilitates the spread of false information. 
+            The lack of posting restrictions allows individuals to easily spread rumors and misinformation, damaging reputations and affecting opinions. 
+            The page describes the importance of identifying fake news and highlights the use of machine learning classifiers for this purpose. 
+            The user is invited to enter news headlines for analysis. The page also states it will not share the user's email.
+          </p> 
+          <br>
+          <h4 class="heading">Post your Opinion</h4>
+          <br>
+        </div>
+      </div>
+      <div class="container_2">
+        <input type="text" placeholder="Put your opinion......"
+        class="input_opinion"/>
+      </div>
+      <br>
+      <button class="button">
+        Enter 
+      </button>
     </section>
 
-    <!--================= NEWS SECTION ================= -->
-    <section class="our_news" id="About Us">
-        <h2>Machine Learning Model</h2>
-        <h1>Rumor Stance Classification</h1>
-        <div class="semicontainer">
-            <div class="left">
-                <p>
-                    The internet is one of the most significant inventions, connecting a vast number of users worldwide. 
-                    People use it for various purposes, with social media platforms providing easy access to information sharing. 
-                    However, these platforms do not verify users or their posts, allowing the spread of fake news. 
-                    Such misinformation can be used as propaganda against individuals, societies, organizations, or political parties. 
-                    Since manually identifying fake news is challenging, there is a growing need for machine learning classifiers to detect it automatically. 
-                    This systematic literature review explores the role of machine learning in identifying and combating fake news.
-                </p>
-                <br><br>
-                <button>
-                    Predict News
-                </button>
+    <!--==================== Contact Us ====================-->
+    <br><br><br>
+    <section class="contact us" id="contactus">
+      <div class="contact_us container grid">
+        <div class="contact_us_on">
+          <h2 class="contact_us_title">
+            Contact Us
+          </h2>
+          <br><br><br>
+          <div class="contact_us_img">
+            <img src="/images/Free Vector _ Truth  concept illustration.jpeg" class="about__img-two" />
+          </div>
+          <div>
+            <h4 class="heading">
+              Enter your name 
+            </h4> 
+            <input type="text" placeholder="enter your name....."
+            class="input_contact">
+            <br>
+            <h4 class="heading">
+              Enter your email 
+            </h4> 
+            <input type="text" placeholder="enter your email....."
+            class="input_contact">
+            <br>
+            <h4 class="heading">
+              Enter your phone number 
+            </h4> 
+            <input type="text" placeholder="enter your phone number....."
+            class="input_contact">
+            <br>
+            <button class="button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== FAQS ====================-->
+    <section class="faqs section" id="FAQs">
+      <div class="faqs__container container grid">
+        <h2 class="section__title faqs__title">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faqs__content">
+          <!--==================== FAQ 1 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq1')">
+              What is Prismatrix?
             </div>
-
-            <div class="right">
-                <img src="./correcting_mistake.jpg" alt="">
+            <div class="faq__answer" id="faq1">
+              <p>
+                Prismatrix is a coding competition that explores the Code
+                Spectrum and offers a platform for participants to showcase
+                their coding skills.
+              </p>
             </div>
+          </div>
+
+          <!--==================== FAQ 2 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq2')">
+              How can I register for Prismatrix?
+            </div>
+            <div class="faq__answer" id="faq2">
+              <p>
+                To register for Prismatrix, click on the Register button on the home page and follow the registration
+                process on Devfolio.
+              </p>
+            </div>
+          </div>
+
+          <!--====================FAQs 3 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq3')">
+              What is in for me?
+            </div>
+            <div class="faq__answer" id="faq3">
+              <p>
+                Learning new skills, looks good on your CV, networking, winning cash prizes, working as a team, meet great people, have great food and having fun!
+              </p>
+            </div>
+          </div>
+          <!--====================FAQs 4====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq4')">
+              What is the Program/Timetable?
+            </div>
+            <div class="faq__answer" id="faq4">
+              <p>
+                Please check the timeline on the website, small changes might occur.
+              </p>
+            </div>
+          </div>
+          <!--====================FAQs 5 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq5')">
+              How many people should a Team be?
+            </div>
+            <div class="faq__answer" id="faq5">
+              <p>
+                A team should be between 2-4 people, if you don’t have a team yet you can still apply because you will have the chance to join a team onsight.
+              </p>
+            </div>
+          </div>
+          <!--====================FAQs 6 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq6')">
+              What are the costs of participating?
+            </div>
+            <div class="faq__answer" id="faq6">
+              <p>
+                FREE. Free for spectators. Free for participants.
+              </p>
+            </div>
+          </div>
+          <!--====================FAQs 7 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq7')">
+              WILL THERE BE PRIZES?
+            </div>
+            <div class="faq__answer" id="faq7">
+              <p>
+               Absolutely. Check out our prize page for details.
+              </p>
+            </div>
+          </div>
+          <!--====================FAQs 8 ====================-->
+          <div class="faq">
+            <div class="faq__question" onclick="toggleAnswer('faq8')">
+              I have a question or concern what should I do?
+            </div>
+            <div class="faq__answer" id="faq8">
+              <p>
+                Contact us. We are here to help and create a great atmosphere.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!--================= NEws detection PAGE ================= -->
-    <section class="detect_news" id="Prediction">
-        <h1>Detect Rumor</h1>
-        <div class="false_or_true">
-            <p>
-                Our page states that increased internet and social media usage facilitates the spread of false information. 
-                The lack of posting restrictions allows individuals to easily spread rumors and misinformation, damaging reputations and affecting opinions. 
-                The page describes the importance of identifying fake news and highlights the use of machine learning classifiers for this purpose. 
-                The user is invited to enter news headlines for analysis. The page also states it will not share the user's email.
-            </p>
+    <!--=============== JavaScript to toggle answer display ===============-->
+    <script>
+      function toggleAnswer(faqId) {
+        var faqAnswer = document.getElementById(faqId);
+
+        // Toggle display of the answer
+        if (faqAnswer.style.display === "block") {
+          faqAnswer.style.display = "none";
+        } else {
+          faqAnswer.style.display = "block";
+        }
+      }
+    </script>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <div class="headline">Rumor Detection</div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ieee.umit/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" alt="Instagram Logo">
+                </a>
+                <a href="https://www.linkedin.com/in/your_linkedin_profile" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-white-png-icon-transparent.png" alt="LinkedIn Logo">
+                </a>
+                <a href="https://discord.gg/Htp23GDre3" target="_blank" rel="noopener noreferrer">
+                    <img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black.png" alt="Discord Logo">
+                </a>
+            </div>
+              
+            </div>
+          </div>
         </div>
-        <br><br>
-        <h4>Enter News Headline</h4>
-        <div class="container">
-            <input type="text" placeholder="Add news headline......"
-            class="input_container_news"/>
+
+        <div class="footer__rights">
+          <p class="footer__copy">
+            &#169; 2025 Rumor Detection. All rights reserved.
+          </p>
+          <div class="footer__terms"></div>
         </div>
-    </section>
-</body>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</div>
+
+<script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>                
+
+   
+  </body>
 </html>
