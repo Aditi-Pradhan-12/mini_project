@@ -298,9 +298,14 @@ body {
   row-gap: 2rem;
 }
 
+.section_title{
+  margin-left: 100px;
+}
+
 .about__description {
   margin-bottom: var(--mb-2);
   color: var(--white-color);
+  margin-left: 100px;
 }
 
 .about__img {
@@ -318,94 +323,209 @@ body {
 /*=============== Prediction ===============*/
 .prediction_title{
     color: white;
+    margin-left: 70px;
 }
 
 .prediction__description{
     color: white;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-.heading{
+.pred_heading{
     color: white;
+    margin-left: 70px;
 }
 
 .container_1{
     position: relative;
     color: white;
-    margin-left: 60px;
+    margin-left: 70px;
+    margin-right: 95px;
+    width: 78%;
+    height: 0.75rem;
 }
 
 .input_container_news{
-    width: 90%;
-    height: 1.9rem;
+    height: 0.5rem;
     border-radius: 0.7rem;
-    font-size: medium;
+    font-size: small;
 }
 
-.button{
+.pred_button{
+    margin-left: 70px;
+    margin-right: 70px;
     position: relative;
     background-color: green;
-    height: 2rem;
+    height: 1.9rem;
     width: 7rem;
-    margin-left: 60px;
     border-radius: 0.4rem;
-    font-size: medium;
+    font-size: 15px;
 }
 
 /*========= OPINION ====================*/
 .opinion_title{
     color: white;
+    margin-left: 70px;
 }
 
 .opinion__description{
     color: white;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .container_2{
-    margin-left: 60px;
+    margin-left: 70px;
+    margin-right: 95px;
+    width: 78%;
+}
+
+.opinion_heading{
+  color: white;
+  margin-left: 70px;
 }
 
 .input_opinion{
-    width: 90%;
-    height: 1.8rem;
+    height: 0.75rem;
     border-radius: 0.7rem;
-    font-size: medium;
+    font-size: small;
+}
+
+.opinion_button{
+    margin-left: 70px;
+    margin-right: 70px;
+    position: relative;
+    background-color: green;
+    height: 1.9rem;
+    width: 7rem;
+    border-radius: 0.4rem;
+    font-size: 15px;
 }
 
 /*=============== Contact Us ===============*/
 .contact_us{
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 5rem;
+    margin-right: 95px;
 }
 
 .contact_us_on{
     display: grid;
     align-items: top;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     column-gap: 4rem;
+    color: white;
+    margin-right: 95px;
 }
 
 .contact_us_title{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-left: 70px;
 }
 
 .contact_us_img{
     width: 350px;
     height: 300px;
+    margin-left: 70px;
+}
+
+.contact_heading{
+  margin: 5px 0;
+  padding: 10px;  
 }
 
 .input_contact{
     display: flex;
-    height: 1.7rem;
-    width: 20rem;
+    height: 0.2rem;
+    width: 40%;
     justify-items: center;
     border-radius: 0.7rem;
-    font-size: medium;
-    align-items: left;
+    font-size: small;
 }
+
+.contact_button{
+  height: 1.7rem;
+  font-size: medium;
+  width: 5rem;
+  background-color: green;
+  border-radius: 0.5rem;
+}
+
+/*=============== LOGIN/SIGNUP ===============*/
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Tabs */
+.tab button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Form Fields */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.social-login .btn {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.google { background-color: #db4437; color: white; }
+.facebook { background-color: #3b5998; color: white; }
+.linkedin { background-color: #0077b5; color: white; }
+.github { background-color: #333; color: white; }
+
+.divider {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
 /*=============== FOOTER ===============*/
 .footer__container {

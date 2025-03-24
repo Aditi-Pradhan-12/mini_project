@@ -36,22 +36,22 @@
               <a href="#home" target="_self" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#aboutus" target="_self" class="nav__link">About Us</a>
+              <a href="/aboutus.html" target="_blank" class="nav__link">About Us</a>
             </li>
             <li class="nav__item">
-              <a href="#prediction" target="_self" class="nav__link">Prediction</a>
+              <a href="/prediction.html" target="_blanl" class="nav__link">Prediction</a>
             </li>
             <li class="nav__item">
-              <a href="#opinion" target="_self" class="nav__link">Opinion</a>
+              <a href="/opinion.html" target="_blank" class="nav__link">Opinion</a>
             </li>
             <li class="nav__item">
-              <a href="#contactus" target="_self" class="nav__link">Contact Us</a>
+              <a href="/contactus.html" target="_blank" class="nav__link">Contact Us</a>
             </li>
             <li class="nav__item">
-              <a href="#FAQs" target="_self" class="nav__link">FAQs</a>
+              <a href="/faq's.html" target="_blank" class="nav__link">FAQs</a>
             </li>
             <li class="nav__item">
-              <a href="#login/sign_up" target="_blank" class="nav__link">Login/Sign Up</a>
+              <a href="/signup.html" target="_blank" class="nav__link">Login/Sign Up</a>
             </li>
           </ul>
         </div>
@@ -69,129 +69,6 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       </section>
-
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="aboutus">
-        <div class="about__container container grid">
-          <div class="about__data">
-            <h2 class="section_title about_title">
-              ABOUT US
-            </h2>
-            <br>
-            <p class="about__description">
-              The internet is one of the most significant inventions, connecting a vast number of users worldwide. 
-              People use it for various purposes, with social media platforms providing easy access to information sharing. 
-              However, these platforms do not verify users or their posts, allowing the spread of fake news. 
-              Such misinformation can be used as propaganda against individuals, societies, organizations, or political parties. 
-              Since manually identifying fake news is challenging, there is a growing need for machine learning classifiers to detect it automatically. 
-              This systematic literature review explores the role of machine learning in identifying and combating fake news.
-            </p>    
-          </div>
-
-          <div class="about__img">
-            <img src="/images/correcting_mistake.jpg" class="about__img-two" />
-          </div>
-        </div>
-      </section>
-
-      <!--==================== PREDICTION ====================-->
-      <br><br><br>
-      <section class="prediction" id="prediction">
-        <div class="prediction__container container grid">
-          <div class="false_or_true">
-            <h2 class="prediction_title about_title">
-              Prediction
-            </h2>
-            <br>
-            <p class="prediction__description">
-              Our page states that increased internet and social media usage facilitates the spread of false information. 
-              The lack of posting restrictions allows individuals to easily spread rumors and misinformation, damaging reputations and affecting opinions. 
-              The page describes the importance of identifying fake news and highlights the use of machine learning classifiers for this purpose. 
-              The user is invited to enter news headlines for analysis. The page also states it will not share the user's email.
-            </p> 
-            <br>
-            <h4 class="heading">Enter News Headline</h4>
-            <br>
-          </div>
-        </div>
-        <div class="container_1">
-          <input type="text" placeholder="Add news headline......"
-          class="input_container_news"/>
-        </div>
-        <br>
-        <button class="button">
-          Predict News
-        </button>
-      </section>
-
-    <!--==================== OPINION ====================-->
-    <br><br><br>
-    <section class="opinion" id="opinion">
-      <div class="opinion__container container grid">
-        <div class="opinion_in">
-          <h2 class="opinion_title about_title">
-            Opinion
-          </h2>
-          <br>
-          <p class="opinion__description">
-            Our page states that increased internet and social media usage facilitates the spread of false information. 
-            The lack of posting restrictions allows individuals to easily spread rumors and misinformation, damaging reputations and affecting opinions. 
-            The page describes the importance of identifying fake news and highlights the use of machine learning classifiers for this purpose. 
-            The user is invited to enter news headlines for analysis. The page also states it will not share the user's email.
-          </p> 
-          <br>
-          <h4 class="heading">Post your Opinion</h4>
-          <br>
-        </div>
-      </div>
-      <div class="container_2">
-        <input type="text" placeholder="Put your opinion......"
-        class="input_opinion"/>
-      </div>
-      <br>
-      <button class="button">
-        Enter 
-      </button>
-    </section>
-
-    <!--==================== Contact Us ====================-->
-    <br><br><br>
-    <section class="contact us" id="contactus">
-      <div class="contact_us container grid">
-        <div class="contact_us_on">
-          <h2 class="contact_us_title">
-            Contact Us
-          </h2>
-          <br><br><br>
-          <div class="contact_us_img">
-            <img src="/images/Free Vector _ Truth  concept illustration.jpeg" class="about__img-two" />
-          </div>
-          <div>
-            <h4 class="heading">
-              Enter your name 
-            </h4> 
-            <input type="text" placeholder="enter your name....."
-            class="input_contact">
-            <br>
-            <h4 class="heading">
-              Enter your email 
-            </h4> 
-            <input type="text" placeholder="enter your email....."
-            class="input_contact">
-            <br>
-            <h4 class="heading">
-              Enter your phone number 
-            </h4> 
-            <input type="text" placeholder="enter your phone number....."
-            class="input_contact">
-            <br>
-            <button class="button">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--==================== FAQS ====================-->
     <section class="faqs section" id="FAQs">
@@ -295,6 +172,68 @@
       </div>
     </section>
 
+    <!--==================== login / sign up ====================-->
+    <section class="login/sign_up" id="login/sign_up">
+      <!-- Trigger Button -->
+      <button id="login/sign_up">Login / Sign Up</button>
+
+      <!-- Modal -->
+      <div id="authModal" class="modal">
+          <div class="modal-content">
+              <span class="close" id="closeModal">&times;</span>
+              <h2>Please Login To Continue</h2>
+              
+              <!-- Tabs -->
+              <div class="tab">
+                  <button class="tablinks active" onclick="openTab(event, 'SignIn')">Sign In</button>
+                  <button class="tablinks" onclick="openTab(event, 'SignUp')">Sign Up</button>
+              </div>
+
+              <!-- Sign In Tab -->
+              <div id="SignIn" class="tabcontent">
+                  <form action="/login" method="POST">
+                      <label for="username">Username or email</label>
+                      <input type="text" id="username" name="username" placeholder="Username or email" required>
+                      
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password" placeholder="Password" required>
+                      
+                      <div class="options">
+                          <label><input type="checkbox"> Remember me</label>
+                          <a href="/forgot-password">Forgot password</a>
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary">Sign In</button>
+                  </form>
+
+                  <div class="divider">or</div>
+
+                    <!-- Social Login -->
+                    <div class="social-login">
+                        <button class="btn google">Google</button>
+                        <button class="btn facebook">Facebook</button>
+                        <button class="btn linkedin">LinkedIn</button>
+                        <button class="btn github">GitHub</button>
+                    </div>
+                    <p><a href="#login/sign_up" style="color: green;">Why Create an Account?</a></p>
+                </div>
+
+              <!-- Sign Up Tab -->
+              <div id="SignUp" class="tabcontent" style="display:none;">
+                  <form action="/signup" method="POST">
+                      <label for="newUsername">Email</label>
+                      <input type="email" id="newUsername" name="newUsername" placeholder="Email address" required>
+
+                      <label for="newPassword">Password</label>
+                      <input type="password" id="newPassword" name="newPassword" placeholder="Password" required>
+
+                      <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+
     <!--=============== JavaScript to toggle answer display ===============-->
     <script>
       function toggleAnswer(faqId) {
@@ -353,8 +292,48 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-</div>
+    <!--=========== JS FOR LOGIN/SIGNUP PAGE ================-->
+    <!--== Modal Logic ==--> 
+    <script>
+      // Modal Logic
+      var modal = document.getElementById("authModal");
+      var openModal = document.getElementById("openModal");
+      var closeModal = document.getElementById("closeModal");
 
+      openModal.onclick = function() {
+          modal.style.display = "block";
+      };
+
+      closeModal.onclick = function() {
+          modal.style.display = "none";
+      };
+
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      };
+
+      // Tab Switching
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+
+    </script>
+</div>
 <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>                
 
    
