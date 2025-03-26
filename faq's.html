@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- logo -->
+    <link rel="icon" type="/images/logo" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:
+    opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=news/">
+    
+    <!-- FONT awesome ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/f25154fa92.js" crossorigin="anonymous"></script>
+
+    <!-- POPPINS font by google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <title>Frequently Aksed Questions</title>
+    </head>
+    <body>
+    <!--==================== FAQS ====================-->
+        <section class="faqs_section" id="FAQs">
+            <br><br><br>
+            <div class="faqs__container container grid">
+            <h2 class="section__title faqs__title">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faqs__content">
+                <!--==================== FAQ 1 ====================-->
+                <div class="faq">
+                    <div class="faq__question" onclick="toggleAnswer('faq1')">
+                        What is Rumor Stance Classification?
+                    </div>
+                    <div class="faq__answer" id="faq1">
+                        <p>
+                            Rumor stance classification involves categorizing user responses 
+                            to rumors into distinct classes based<br> on their expressed attitudes. 
+                            The primary categories are:<br><br>
+                            1] Support: The user agrees with or endorses the rumor.<br>
+                            2] Deny: The user refutes the rumor's veracity.<br>
+                            3] Query: The user seeks additional evidence or clarification regarding the rumor.<br>
+                            4] Comment: The user provides a remark that does not contribute to assessing the rumor's truthfulness.
+                        </p>
+                    </div>
+                </div>
+
+                <!--==================== FAQ 2 ====================-->
+                <div class="faq">
+                    <div class="faq__question" onclick="toggleAnswer('faq2')">
+                        Why is Rumor Stance Classification Important?
+                    </div>
+                    <div class="faq__answer" id="faq2">
+                        <p>
+                            RSC plays a vital role in detecting and managing misinformation on social media platforms. 
+                            By categorizing<br> stances, researchers and platforms can:<br><br>
+                            1] Judge public belief in rumors.<br>
+                            2] Identify potentially harmful misinformation.<br>
+                            3] Enhance the accuracy of automated systems designed to flag false information.
+                        </p>
+                    </div>
+                </div>
+
+                <!--====================FAQs 3 ====================-->
+                <div class="faq">
+                    <div class="faq__question" onclick="toggleAnswer('faq3')">
+                        How does context influence rumor stance classification?
+                    </div>
+                    <div class="faq__answer" id="faq3">
+                        <p>
+                            Context plays a significant role in RSC as it can affect how users express their opinions. 
+                            Factors include:<br><br>
+                            1] Previous Interactions: The history of conversations can provide insights into user sentiment.<br>
+                            2] Cultural References: Different cultures may interpret phrases or sentiments differently,<br> impacting classification accuracy.<br>
+                            3] Temporal Factors: The timing of a post relative to an event can influence how users respond to a rumor.<br>
+                        </p>
+                    </div>
+                </div>
+                <!--====================FAQs 4====================-->
+                <div class="faq">
+                    <div class="faq__question" onclick="toggleAnswer('faq4')">
+                        How do you evaluate the performance of Rumor Stance Classification models?
+                    </div>
+                    <div class="faq__answer" id="faq4">
+                        <p>
+                            The performance of RSC models is typically evaluated using metrics such as:<br><br>
+                            1] Accuracy: The overall correctness of the model's predictions.<br>
+                            2] Precision: The proportion of true positive predictions among all positive predictions.<br>
+                            3] Recall (Sensitivity): The proportion of true positive predictions among all actual positives.<br>
+                            4] F1 Score: The harmonic mean of precision and recall, providing a balance between the two.
+                        </p>
+                    </div>
+                </div>
+                <!--====================FAQs 5 ====================-->
+                <div class="faq">
+                    <div class="faq__question" onclick="toggleAnswer('faq5')">
+                        What types of data are used for Rumor Stance Classification?
+                    </div>
+                    <div class="faq__answer" id="faq5">
+                        <p>
+                            RSC primarily utilizes data from social media platforms, online forums, and news articles.<br>
+                            Common sources include:<br><br>
+                            1] Twitter: Tweets related to trending rumors.<br>
+                            2] Reddit: Threads discussing various topics and claims.<br>
+                            3] Facebook: Public posts and comments on rumors.<br>
+                            4] News Websites: Articles that may propagate or debunk rumors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+<!--=============== JavaScript to toggle answer display ===============-->
+<script>
+    function toggleAnswer(faqId) {
+      var faqAnswer = document.getElementById(faqId);
+
+      // Toggle display of the answer
+      if (faqAnswer.style.display === "block") {
+        faqAnswer.style.display = "none";
+      } else {
+        faqAnswer.style.display = "block";
+      }
+    }
+  </script>

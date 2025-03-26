@@ -171,6 +171,12 @@ img{
   align-items: center;
 }
 
+.nav_container{
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
 .nav__logo, .nav__toggle {
   color: var(--white-color);
   align-items: left;
@@ -179,18 +185,15 @@ img{
 
 .nav__logo {
   font-weight: var(--font-semi-bold);
-  font-size: large;
+  font-size: medium;
   align-items: left;
-  position:relative;
+  position: absolute;
+  margin-left: 150px;
 }
 
 .nav__toggle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
-}
-
-.nav__menu {
-  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -210,7 +213,11 @@ img{
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 2.5rem;
+  margin-left: 350px;
+}
+
+.nav_list, .nav__item{
+  font-size: 15px;
 }
 
 .nav__link {
@@ -321,6 +328,11 @@ body {
 }
 
 /*=============== Prediction ===============*/
+.prediction__container{
+  margin-left: 70px;
+  margin-right: 180px;
+}
+
 .prediction_title{
     color: white;
     margin-left: 70px;
@@ -329,7 +341,7 @@ body {
 .prediction__description{
     color: white;
     margin-left: 70px;
-    margin-right: 70px;
+    margin-right: 100px;
 }
 
 .pred_heading{
@@ -341,19 +353,21 @@ body {
     position: relative;
     color: white;
     margin-left: 70px;
-    margin-right: 95px;
-    width: 78%;
+    margin-right: 100px;
+    width: 68rem;
     height: 0.75rem;
 }
 
 .input_container_news{
-    height: 0.5rem;
     border-radius: 0.7rem;
-    font-size: small;
+    font-size: medium;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 1rem;
 }
 
 .pred_button{
-    margin-left: 70px;
+    margin-left: 140px;
     margin-right: 70px;
     position: relative;
     background-color: green;
@@ -366,24 +380,25 @@ body {
 /*========= OPINION ====================*/
 .opinion_title{
     color: white;
-    margin-left: 70px;
+    margin-left: 10px;
+    margin-right: 95px;
 }
 
 .opinion__description{
     color: white;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.container_2{
-    margin-left: 70px;
+    margin-left: 10px;
     margin-right: 95px;
-    width: 78%;
 }
 
 .opinion_heading{
   color: white;
-  margin-left: 70px;
+  margin-left: 10px;
+}
+
+.container_2{
+    margin-left: 40px;
+    margin-right: 85px;
+    width: 60rem;
 }
 
 .input_opinion{
@@ -393,7 +408,7 @@ body {
 }
 
 .opinion_button{
-    margin-left: 70px;
+    margin-left: 40px;
     margin-right: 70px;
     position: relative;
     background-color: green;
@@ -407,7 +422,7 @@ body {
 .contact_us{
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1.5fr;
+    /* grid-template-columns: 1fr 1.5fr; */
     column-gap: 5rem;
     margin-right: 95px;
 }
@@ -441,50 +456,90 @@ body {
 
 .input_contact{
     display: flex;
-    height: 0.2rem;
+    height: 15px;
     width: 40%;
     justify-items: center;
-    border-radius: 0.7rem;
+    border-radius: 0.8rem;
     font-size: small;
 }
 
 .contact_button{
-  height: 1.7rem;
+  height: 1.9rem;
   font-size: medium;
   width: 5rem;
   background-color: green;
   border-radius: 0.5rem;
 }
 
-/*=============== LOGIN/SIGNUP ===============*/
+/*=============== FAQ ===============*/
+.faqs_section{
+  border-left: 50px;
+}
+
+.faqs__title{
+  color: white;
+}
+
+
+/*=============== LOGIN ===============*/
 /* Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
+
+.login__title{
+  color: white;
+  font-size: large;
 }
 
-.modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 8px;
-  width: 400px;
-  text-align: center;
+.login__content, .login_heading{
+  color: white;
 }
 
-.close {
-  float: right;
-  font-size: 24px;
-  cursor: pointer;
+.input_log_content{
+  width: 350px;
 }
 
-/* Tabs */
+.input_content{
+  border-radius: 0.7rem;
+}
+
+.login_button{
+  background-color: green;
+  height: 30px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  border-radius: 0.4rem;
+}
+
+/*=============== REGISTER ===============*/
+.register__title{
+  color: white;
+  font-size: large;
+}
+
+.register_heading{
+  color: white;
+  align-items: left;
+  justify-content: left;
+  display: flex;
+}
+
+.input_reg_content{
+  width: 300px;
+}
+
+.input_content{
+  height: 15px;
+}
+
+.register_button{
+  height: 30px;
+  width: 80px;
+  background-color: green;
+  border-radius: 0.5rem;
+}
+
+/*========== Tabs ==========*/
 .tab button {
   background-color: #f1f1f1;
   border: none;
@@ -526,14 +581,18 @@ input[type=text], input[type=password], input[type=email] {
   margin-bottom: 15px;
 }
 
-
 /*=============== FOOTER ===============*/
+.footer{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .footer__container {
-  row-gap: 5rem;
-  display: flex;
+  row-gap: 1rem;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   text-align: center;
+  width: 100%;
 }
 
 .footer__content {
